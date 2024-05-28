@@ -1,3 +1,9 @@
+print("Tabuada")
+
+input("Data: ")
+
+numero_tabuada = int(input("Digite o número para a tabuada: "))
+
 def tabuada(numero):
     print(f"Tabuada de {numero}:")
 
@@ -13,15 +19,16 @@ def tabuada(numero):
 
         
         if i != 0:
-            print(f"{numero} ÷ {i} = {numero / i:.2f}")
+            print(f"{numero} ÷ {i} = {numero / i:.2f}".replace(".00", ""))
         else:
             print(f"Divisão por zero não é permitida.")
 
         print("-" * 20)
 
-
-numero_tabuada = int(input("Digite o número para a tabuada: "))
 tabuada(numero_tabuada)
+
+
+
 
 
 
